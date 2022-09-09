@@ -3,7 +3,7 @@ def date = new Date()
 pipeline {
 	agent any
 	stages {
-		stage {
+		stage ('HolaMundo') {
 			steps {
 				echo "Hoy es día " + date.format('dd-MM-yyyy')
 				echo "Chocolate Blanco		1000"
