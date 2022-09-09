@@ -111,7 +111,7 @@ public class AA14 implements comprobar {
 						lineas.add("pipeline {");
 						lineas.add("	agent any");
 						lineas.add("	stages {");
-						lineas.add("		stage {");
+						lineas.add("		stage ('HolaMundo') {");
 						lineas.add("			steps {");
 						lineas.add("				echo \"Hoy es día \" + date.format('dd-MM-yyyy')");
 						for (String linea : lineas2) {
