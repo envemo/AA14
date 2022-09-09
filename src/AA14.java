@@ -51,7 +51,7 @@ public class AA14 implements comprobar {
 		{
 		
 			//https://www.el-tiempo.net/api/json/v2/provincias/41
-			/*String link = "https://www.el-tiempo.net/api/json/v2/provincias/41";
+			String link = "https://www.el-tiempo.net/api/json/v2/provincias/41";
 
 			URL url = new URL (link); //Declaro la URL
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection(); //Declaro la conexion
@@ -73,10 +73,7 @@ public class AA14 implements comprobar {
 					sb.append(sc.nextLine());
 				}
 				sc.close();
-				//JSONObject jsonObject = new JSONObject(sb.toString());*/
-				String string = "{\"title\":\"El tiempo en la provincia de Sevilla\",\"today\":{\"p\":\"Cielos poco nubosos, con intervalos de nubes altas. Temperaturas en ascenso. Vientos variables flojos.\"},\"tomorrow\":{\"p\":\"Cielos poco nubosos o despejados. Temperaturas en descenso en el suroeste de la provincia y en ascenso en el resto. Vientos variables flojos, tendiendo a suroeste.\"},\"ciudades\":[{\"id\":\"41053\",\"idProvince\":\"41\",\"name\":\"Lebrija\",\"nameProvince\":\"Sevilla\",\"stateSky\":{\"description\":\"Poco nuboso\",\"id\":\"12\"},\"temperatures\":{\"max\":\"37\",\"min\":\"21\"}},{\"id\":\"41039\",\"idProvince\":\"41\",\"name\":\"\\u00c9cija\",\"nameProvince\":\"Sevilla\",\"stateSky\":{\"description\":\"Nubes altas\",\"id\":\"17\"},\"temperatures\":{\"max\":\"37\",\"min\":\"20\"}},{\"id\":\"41065\",\"idProvince\":\"41\",\"name\":\"Mor\\u00f3n de la Frontera\",\"nameProvince\":\"Sevilla\",\"stateSky\":{\"description\":\"Nubes altas\",\"id\":\"17\"},\"temperatures\":{\"max\":\"36\",\"min\":\"21\"}},{\"id\":\"41091\",\"idProvince\":\"41\",\"name\":\"Sevilla\",\"nameProvince\":\"Sevilla\",\"stateSky\":{\"description\":\"Nubes altas\",\"id\":\"17\"},\"temperatures\":{\"max\":\"36\",\"min\":\"22\"}}],\"provincia\":{\"CODPROV\":\"41\",\"NOMBRE_PROVINCIA\":\"Sevilla\",\"CODAUTON\":\"01\",\"COMUNIDAD_CIUDAD_AUTONOMA\":\"Andaluc\\u00eda\",\"CAPITAL_PROVINCIA\":\"Sevilla\"},\"comautonoma\":{\"ID\":\"and\",\"CODAUTON\":\"01\",\"CODCOMUN\":\"61\",\"NOMBRE\":\"ANDALUC\\u00cdA\"},\"metadescripcion\":\"El tiempo en la provincia de Sevilla\",\"keywords\":\"El tiempo en la provincia de Sevilla, precipitaciones, viento, lluvia, estado del cielo\",\"breadcrumb\":[{\"name\":\"Provincias\",\"url\":\"\\/provincias\",\"title\":\"El tiempo | Lista de provincias\"},{\"name\":\"Sevilla\",\"url\":null,\"title\":\"El tiempo en la provincia de Sevilla\"}]}";
-				JSONObject jsonObject = new JSONObject(string);
-				//System.out.println(jsonObject.toString());
+				JSONObject jsonObject = new JSONObject(sb.toString());
 				System.out.println(jsonObject.getString("metadescripcion") + ":");
 				System.out.println("----------------------------------------------------");
 				int temperatura = 0;
@@ -127,7 +124,7 @@ public class AA14 implements comprobar {
 					// TODO Bloque catch generado automáticamente
 					e.printStackTrace();
 				}
-			//}
+			}
 			
 		}
 		catch (Exception e)
